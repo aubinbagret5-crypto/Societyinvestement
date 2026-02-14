@@ -124,4 +124,4 @@ document.getElementById("logout-btn").onclick = ()=>{
   localStorage.setItem("currentUser",JSON.stringify(currentUser));
   dashboard.style.display="none";
   authContainer.style.display="block";
-}
+}<script src="script.js"></script>
