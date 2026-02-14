@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Manager Invest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Page Inscription / Connexion -->
+  <div id="auth-container">
+    <h1>Manager Invest</h1>
+    <div id="signup-form">
+      <h2>Inscription</h2>
+      <input type="text" id="name" placeholder="Nom complet">
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Mot de passe">
+      <input type="text" id="parrain" placeholder="Code parrain (facultatif)">
+      <button id="signup-btn">S'inscrire</button>
+      <p>Déjà un compte ? <span id="go-login">Connectez-vous</span></p>
+    </div>
+    <div id="login-form" style="display:none;">
+      <h2>Connexion</h2>
+      <input type="email" id="login-email" placeholder="Email">
+      <input type="password" id="login-password" placeholder="Mot de passe">
+      <button id="login-btn">Se connecter</button>
+      <p>Pas encore de compte ? <span id="go-signup">Inscrivez-vous</span></p>
+    </div>
+  </div>
+
+  <!-- Dashboard -->
+  <div id="dashboard" style="display:none;">
+    <div id="accueil">
+      <h2>Accueil</h2>
+      <p>Solde : <span id="balance">0</span> FCFA</p>
+      <button id="recharge-btn">Recharger</button>
+      <button id="withdraw-btn">Retirer</button>
+      <div id="images-accueil">
+        <img src="images/money1.jpg" alt="Argent">
+        <img src="images/money2.jpg" alt="Investissement">
+      </div>
+    </div>
+
+    <div id="plans">
+      <h2>Plans VIP</h2>
+      <div class="plan-list" id="plan-list"></div>
+      <p class="invest-msg">Investissez dès maintenant avec Manager Invest et sécurisez vos gains</p>
+    </div>
+
+    <div id="menu">
+      <h2>Menu</h2>
+      <button id="history-recharge-btn">Historique Recharge</button>
+      <button id="history-withdraw-btn">Historique Retrait</button>
+      <button id="details-balance-btn">Détails du solde</button>
+      <button id="logout-btn">Déconnexion</button>
+    </div>
+  </div>
+
+  <!-- Recharge / Retrait modals -->
+  <div id="modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
